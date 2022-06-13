@@ -1,0 +1,70 @@
+introducao ao c++ 03
+
+coisas que eu achei intereissante:
+
+no manejo de strings usamos a blibioteca <cstring>
+
+char str[max];
+strcpy(str,"hello world!");
+nao podemos por exemplo fazer : str ='hello world ';
+
+o caracter NULL é representado pelo /0, ou 0 em ascci
+
+quando definimos a string ja na declaraçao da matriz estamos definindo uma constante.
+
+a blibioteca iostream se trata de fluxo de dados, com entradas padrao (stdin) e saida padrao (stdout), ou tela e teclado.
+
+nos é apresentado as funcoes get (str,tamanho) e getline(str,tamanho)
+
+entao temos as seguintes situaçoes.
+
+cin << str;//aqui le até achar um espaco
+cin.get(str,tamanho);//aqui ele é capaz de ler uma frase, ou melhor, até encontrar um enter 
+//mas ele apresenta um problema, o \n cai no fluxo e impede a próxima leitura
+//entao podemos apresentar a seguinte solucao cin.get(str,tamanho);cin.get();
+//esse segundo cin.get é para ler o /n que ficou no buffer 
+cin.getline(str,tamanho); 
+//essa funcao aqui resolve o problema anterior também, e nao precisamos de uma segunda leitura
+cout <<str;//mostra a string str
+
+cin.getline(about,MAX_ABOUT_LENGTH,'#'); //# e o delimitador, ou seja voce digita até que ele encontre #
+achei como colocar ''', basta usar uma /-> ' /' '
+
+até agora definimos uma string como str[20], um vetor de caracteres.
+
+Para usar a classe de string, inclua o arquivo de cabe ̧calho:
+#include <string>
+
+string testString;
+testString = "Isso  ́e uma string.";
+Repare que em C n ̃ao podemos fazer:
+char testString[20];
+testString = "Isso  ́e uma string.";
+
+usando a classe string podemos fazer s1=s2; ou seja s2 é copiada para s1;
+
+usando o operador += podemos anexar outra string, mas sem espaço
+
+string s1 ("abc");
+string s2 ("def");
+...
+s1 + = s2; // s1 => "abcdef"
+
+operador [] para acessar as posicoes.
+
+operador de concatenacao s3=s1+s2;
+operador de igualdade s1==s2;
+operador de desigualdade s1!=s2;
+
+e os operadores de comparação que nao fazem distincao entre maiuscula e minuscula, apenas tamanho.
+
+usamos o operador ponto na classe string para que o efeito seja aplicado no objeto.
+
+str.length()
+frase.find('Hello')// busca a palavra hello na frase.
+str.sbstr(0,10)
+
+No caso acima, estamos obtando uma ”substring” de str, come ̧cando no caractere da posi ̧c ̃ao 0 e indo
+at ́e o caractere da posi ̧c ̃ao 10.
+
+

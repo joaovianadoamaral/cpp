@@ -1,0 +1,71 @@
+tipos de dados
+primairos:
+	int
+	char
+	bool
+	float
+	double
+	void
+	wchar
+derivador :
+	function
+	array
+	pointer
+	reference
+definidos pelo usuario :
+	class
+	structure
+	union
+	enum
+	typedef
+
+dados personalizados por : 
+	singned
+	unsigned
+	long
+	short
+
+usamos sizeof para tamanho.
+
+vou te falar viu
+no #include <iostream>
+nao pode ter espaço na blibioteca se nao da erro,por exmpl 
+#include < iostream >
+
+operadores aritiméticos iguais, temos na blibioteca math .h  a potenciacao onde C=pow(A,B)
+c=a^B;
+
+operadores relacionais iguais tambem. eles retornam ou verdadeiro(1) ou falso (0)
+
+temos operadores logicos iguais.
+
+novidade: operaçoes bit a bit
+&(apenas um) and
+|(apenas um)or
+^(or exclusivo)
+>>deslocamento a direita
+<< deslocamento a esquerda
+~not
+
+10 && 13 = 1 10 & 13 = 8
+A && D = 1 A & D = 8
+-------------------------------------
+10 || 0 = 1 10 | 0 = 10
+A || 0 = 1 A | 0 = A
+
+--------------
+mostrar o numero na base 2.
+primeiro definimos o numero com unsigned long int A = 0b 00111100 ;
+sendo 0b para indicar numero binario.
+<< bitset <8 >{A}//o oito indica que o binario tem 8 bits
+base hexa decimal temos
+<< hex << uppercase << A
+
+temos no c++ o operador ternario tambem ?:
+condiçao?caso verdade: caso falso
+
+declaramos um vetor com : int v[5];
+
+não é uma boa prática de programação definir matriz por variavel
+nao faça assim: int M[n][m]
+

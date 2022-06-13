@@ -1,0 +1,145 @@
+vamos usar o compilador gcc/g++ no liniux.
+IDE vs code.
+compilação é feita dessa forma aqui.
+g++ meu_programa_em_cpp.cpp -o meu_programa.exe
+
+no c eu costumava rodar usando um -lm no final para a blibioteca <math.h>
+ gcc main.c -o main.exe -lm
+ 
+ a linguagem c++ é uma versão aprimorada do c.
+ 
+ e adiciona suporte `a programa ̧c ̃ao
+orientada a objetos (OOP).
+
+C++ deve ser usado da maneira como foi projetado para explorar sua riqueza.
+
+ex simples de um programa c++
+// Meu primeiro Programa em C++
+#include <iostream>
+int main()
+{
+std::cout << "Hello World!";
+return(0);
+}
+
+#include <iostream> funciona como uma blibioteca para as funções entradas e saídas.
+
+std :: cout << ”Hello World!”;// envia a string para a saída padrão.
+
+No C++ moderno, toda a funcionalidade da biblioteca padr ̃ao do C++  ́e definida dentro do namespace
+std (abrevia ̧c ̃ao de standard). Assim, as fun ̧c ̃oes de entrada e sa ́ıda est ̃ao dentro do namespace std.
+Usamos o operador :: para definir o escopo.
+
+o operador :: para definir uma função.
+no caso acima a função cout.
+
+repare que '<<' funciona como uma seta, tipo isso aqui vai para ali.
+
+como em c as instruções terminam com ;(erro de sintaxe comum )
+
+/*meu segundo programa C++
+duas saidas */
+#include <iostream>
+using namespace std;
+int main ()
+{
+cout << "Hello World! "; // imprime Hello World!
+cout << "Ol ́a! sou um programa em C++"; //
+}
+
+repare que o 'using namespace std',otimiza que precisamos usar o escopo std:: antes de cada função
+
+temos agora a seguinte notação que se equivale ao \n, ou seja , manda pular para a próxima linha.
+cout << "Hello World! " << endl; // imprime Hello World!
+cout << "Ol ́a! sou um programa em C++!" << endl;
+
+comando << endl, não esquecer das <<.
+
+então um programa em c++ simples possui a seguinte notação.
+#include <iostream>
+
+unsing namespace std;
+
+int main(){
+	corpo do programa ;
+	return 0;
+}
+
+-----------------------------------
+para declarar uma classe temos :
+Quando declaramos uma classe, o modelo b ́asico fica como o dado abaixo:
+
+#include <iostream> ----> cabec ̧alho (header)
+
+using namespace std; ----> informa que vamos usar a biblioteca std
+
+class MinhaPrimeiraClasse ----> Definic ̧ ̃ao da Classe
+{
+	Membros ---> Define os membros (vari ́aveis, estruturas, etc)
+	Func ̧ ̃oes Membros ---> Define as func ̧ ̃oes da classe
+}
+int main() ----> func ̧ ̃ao principal
+{
+	CORPO DE PROGRAMA ----> as instruc ̧ ̃oes do programa vem aqui
+	return 0; ----> comando return da func ̧ ̃ao main()
+}
+------------------------------------------------
+entradas e saidas em c++
+cout e cin são objetos da classe ostream.
+cout para saída e cin para leitura.
+
+# include < iostream >
+# include < cstdio >
+using namespace std ;
+int main () {
+ int x ;
+ cout << " Digite um inteiro : " ;
+ cin >> x;
+ cout << " Numero digitado : " << x << endl ;
+ // usando printf ( biblioteca < cstdio >)
+ printf ( " Numero digitado ( usando printf ): % i\ n " ,x) ;
+ return 0;
+}
+
+a expressao usando printf é equivalente usando cout, repare.
+------------------------------------------------------------
+lendo e mostrando uma string 
+
+# include < iostream >
+# include < cstdio >
+# include < string > // experimente compilar sem essa biblioteca
+ using namespace std ;
+ int main ()
+ {
+ string nome ;
+ cout << " Digite seu nome : " ;
+ cin >> nome ;
+ cout << " Seu nome : " << nome << endl ;
+ // usando printf ( biblioteca < cstdio >)
+ printf ( " Seu nome ( usando printf ): %s \n " , nome . c_str () ) ;
+ // repare ( experimente !) que nao podemos fazer :
+ // printf (" Seu nome ( usando printf ): % s\ n", nome );
+ return 0;
+}
+---------------------------------------------------------------
+
+alguns compiladores nao dao erro quando omitimos a blibioteca string
+
+------------------------
+fiz dois programas introdutorios na pasta c++, basta reparar que deu um erro no #include <iostream>, nao sei porque, mas vou descobrir.
+
+testei as entradas e saidas padrao, cin e cout;
+
+vale notar que o cin quando armazena uma string ele para de ler quando da espaço,logo ele se comporta como um scanf msm e nao uma fgets, a ver.
+
+as operaçoes sao feitas do msm jeito, da uma olhada nos exercicios quando estiver relend.
+
+ex001.cpp e ex002.cpp
+
+----------------------
+historia do c++
+
+fama dada por ser uma linguagem orientada a objetos.
+
+foi dado pelo fato dele tentar aplicar classes ao c, ele viu que era util no desenvolvimento de software.
+
